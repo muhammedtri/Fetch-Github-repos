@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --primary: #EB1D36;
+    --black: --black;
+    --bl: #2196f3;
+    --bg-color: #F5EDDC;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    background-color: var(--bg-color);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.get-repos {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.get-repos input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--primary);
+    margin-right: 20px;
+}
+
+.get-repos input:focus {
+    outline: none;
+}
+
+.get-repos span {
+    background-color: var(--primary);
+    padding: 10px 20px;
+    color: var(--bg-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.all-repos .repo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--primary);
+}
+
+.all-repos .repo h3 {
+    font-size: 18px;
+    color: var(--black);
+}
+
+.all-repos .repo .links span,
+.all-repos .repo .links a {
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: var(--bg-color);
+    font-weight: bold;
+}
+
+.all-repos .repo .watchers {
+    background-color: var(--bl);
+}
+
+.all-repos .repo .visit {
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+.all-repos .error {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
